@@ -215,9 +215,184 @@ public class Exercicio10 {
 }
 ```
 >11. Leia um angulo em graus e apresente convertido em radianos. A formula de conversão é: R=G*PI/180, sendo G o angulo em graus e R em radianos e PI=3,14.
->12. Leia um angulo em radianos e apresente o convertido em graus. A formula de conversão é G = R*180/PI, sendo G o angulo em graus e R em radianos e PI = 3.14.
->13. Leia um valor de comprimento em polegadas e apresente convertido em cetimentros. A formula de conversão é C = P*2,54, sendo C o comprimento em cetimentros e P o comprimento em polegadas.
->14. Leia um valor de comprimento em cetimentros e apresente convertido em polegadas. A formula de conversão é P = c/2,54 sendo C o comprimento em cetimentros e P o comprimento em polegadas.
->15. Leia um valor de volume em metros cubicos m² e apresente convertido em litros. A formula de conversão é L=1000*M, sendo L o volume em litros e M o volume em metros cúbicos.
->16. Leia um valor de volume em litros e apresente convertido em metros cúbicos m³. A formula de conversão é M=l/1000 sendo L o volume em litros e M o volume em metros cúbicos.
->17. Leia um valor de massa em quilogramas e apresente convertido em libras. A formula de conversão é: L = K/0,45 sendo K a massa em quilogramas e L a massa em libras.
+```
+import java.util.Scanner;
+
+public class Exercicio11 {
+    public static void main (String[]args){
+
+        double g,r;
+
+        Scanner angulo = new Scanner(System.in);
+        System.out.println("Informe um angulo em graus: ");
+        g = angulo.nextDouble();
+
+        r = g * (3.14/180);
+        System.out.println("O angulo em grau convertido para radiano é:" + r);
+
+    }
+
+}
+```
+
+>12. Leia um valor de comprimento em polegadas e apresente convertido em cetimentros. A formula de conversão é C = P*2,54, sendo C o comprimento em cetimentros e P o comprimento em polegadas.
+```
+import java.util.Scanner;
+
+public class Exercicio12 {
+
+    public static void main(String[]args){
+
+        double c,p;
+        Scanner comprimento = new Scanner(System.in);
+        System.out.println("Informe o comprimento em polegadas:");
+        p = comprimento.nextDouble();
+        
+        c = p*2.54;
+        System.out.println("O comprimento em Centimentros é: " + c);
+    }
+}
+```
+
+>13. Leia um valor de comprimento em cetimentros e apresente convertido em polegadas. A formula de conversão é P = c/2,54 sendo C o comprimento em cetimentros e P o comprimento em polegadas.
+```
+import java.util.Scanner;
+
+public class Exercicio13 {
+
+    public static void main(String[]args){
+
+        double c,p;
+        Scanner comprimento = new Scanner(System.in);
+        System.out.println("Informe o comprimento em centimentros:");
+        c = comprimento.nextDouble();
+
+        p = c/2.54;
+        System.out.println("O comprimento em polegadas é: " + p);
+    }
+}
+```
+
+>14. Leia um valor de volume em metros cubicos m² e apresente convertido em litros. A formula de conversão é L=1000*M, sendo L o volume em litros e M o volume em metros cúbicos.
+```
+import java.util.Scanner;
+
+public class Exercicio14 {
+    public static void main(String[]args){
+        double l,m;
+
+        Scanner volume = new Scanner(System.in);
+        System.out.println("Informe um valor de volume em metros cubicos m²:");
+        m = volume.nextDouble();
+        
+        l = 1000*m;
+        System.out.println("O valor convertido para litros é:" + l);
+    }
+}
+```
+>15. Leia um valor de volume em litros e apresente convertido em metros cúbicos m³. A formula de conversão é M=l/1000 sendo L o volume em litros e M o volume em metros cúbicos.
+```
+import java.util.Scanner;
+
+public class Exercicio14 {
+    public static void main(String[]args){
+        double l,m;
+
+        Scanner volume = new Scanner(System.in);
+        System.out.println("Informe um valor de volume em litros:");
+        l = volume.nextDouble();
+
+        m = l/1000;
+        System.out.println("O valor convertido para m³ é:" + m);
+    }
+}
+```
+
+>16. Leia um valor de massa em quilogramas e apresente convertido em libras. A formula de conversão é: L = K/0,45 sendo K a massa em quilogramas e L a massa em libras.
+```
+import java.util.Scanner;
+
+public class Exercicio16 {
+
+    public static void main (String[]args){
+
+        double k,l;
+        Scanner massa = new Scanner(System.in);
+        System.out.println("Informe um valor de massa em quilogramas: ");
+        k = massa.nextDouble();
+
+        l = k/0.45;
+        System.out.println("O valor convertido em libras é " + l);
+        
+    }
+}
+```
+> 17. Leia quatro notas, calcule a media aritmetica e imprima o resultado.
+```
+import java.util.Scanner;
+
+public class Exercicio17 {
+    public static void main(String[]args){
+        double n1, n2, n3, n4, media;
+
+        Scanner nota = new Scanner(System.in);
+        System.out.println("Informe a primeira nota:");
+            n1 = nota.nextDouble();
+            nota.nextLine();
+
+        System.out.println("Informe a segunda nota:");
+            n2 = nota.nextDouble();
+            nota.nextLine();
+
+        System.out.println("Informe a terceira nota:");
+            n3 = nota.nextDouble();
+            nota.nextLine();
+
+        System.out.println("Informe a quarta nota:");
+            n4 = nota.nextDouble();
+            nota.nextLine();
+
+        media = (n1 + n2 + n3 + n4) / 4;
+
+        System.out.println("A media das 4 notas é " + media);
+
+    }
+
+}
+```
+
+> 18. Leia um valor em real e a cotação do dolar. Em seguida, imprima o valor correspondente em dolares.
+```
+import java.util.Scanner;
+
+public class Exercicio18 {
+    public static void main (String[]args){
+
+        double r,d, convertido;
+
+        Scanner valor = new Scanner(System.in);
+        System.out.println("Informe um valor em Real ");
+        r = valor.nextDouble();
+
+        System.out.println("A cotação do dolar hoje está R$5,51");
+        d = 5.51;
+
+        convertido = r * d;
+        System.out.printf("Seu saldo é R$ %.2f", convertido);
+
+    }
+
+}
+```
+> 19. Leia um número inteiro e imprima o seu antecessor e o seu sucessor.
+> 20. Leia um número inteiro e imprima a soma do sucessor de seu triplo com o antecessor de seu dobro.
+> 21. Leia o tamanho do lado de um quadrado e imprima como resultado a sua area.
+> 22. Faça um programa que leia o valor de um produto e imprima o valor com desconto, tendo em vista que o desconto foi de 12%.
+> 23. Leia o salário de um funcionario. Calcule e imprima o valor do novo salario sabendo que  ele recebeu um aumento de 25%.
+> 24. (39) A importancia de R$780.000,00 será dividida entre três ganhadores de um concurso.
+> Sendo que da quantia total:
+> - O primeiro ganhador recebera 46%;
+> - O segundo recebera 32%;
+> - O terceiro recebera o restante.
+> Calcule e imprima a quantia ganha por cada um dos ganhadores.
+> 25.  
