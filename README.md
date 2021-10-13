@@ -151,6 +151,7 @@ public class Exercicio7 {
 
 }
 ```
+
 >8. Leia uma velocidade em m/s e apresente convertida em km/h. A formula de conversão é: k = m*3,6, sendo K a velocidade e km/h e M em M/s.
 ```
 import java.util.Scanner;
@@ -169,8 +170,10 @@ public class Exercicio8 {
         }
 
     }
-    ```
+```
+
 >9. Leia uma distância em milhas e apresnete convertida em quilometros. A formula de conversão é: K = 1,61*M, sendo K a distancia em quilometros e M e, milhas.
+
 ```
 import java.util.Scanner;
 
