@@ -68,7 +68,7 @@ public class Exercicio3 {
 }
 ```
 
-4. Leia um número real e imprima a quinta parte deste número.
+> 4. Leia um número real e imprima a quinta parte deste número.
 ```
 import java.util.Scanner;
 
@@ -131,4 +131,90 @@ public class Exercicio6 {
 }
 ```
 
-7. Leia uma velocidade em KM/h e apresentente convertida em M/s (metros por segundo) a formula de conversão é M = K/3,6 sendo K a velocidade em km/h e M em m/s.
+>7. Leia uma velocidade em KM/h e apresentente convertida em M/s (metros por segundo) a formula de conversão é M = K/3,6 sendo K a velocidade em km/h e M em m/s.
+```
+import java.util.Scanner;
+
+public class Exercicio7 {
+
+    public static void main (String[]args){
+
+        double k,m;
+        Scanner velocidade = new Scanner(System.in);
+        System.out.println("Informe os quilometros por hora: ");
+        k = velocidade.nextDouble();
+
+        m = k/3.6;
+        System.out.println("A velocidade convertida em m/s é: "+ m);
+
+    }
+
+}
+```
+>8. Leia uma velocidade em m/s e apresente convertida em km/h. A formula de conversão é: k = m*3,6, sendo K a velocidade e km/h e M em M/s.
+```
+import java.util.Scanner;
+
+public class Exercicio8 {
+    public static void main(String[]args){
+
+            double k,m;
+            Scanner velocidade = new Scanner(System.in);
+            System.out.println("Informe a velocidade em metros por segundo: ");
+            m = velocidade.nextDouble();
+
+            k = m*3.6;
+            System.out.println("A velocidade convertida em k/h é: "+ k);
+
+        }
+
+    }
+    ```
+>9. Leia uma distância em milhas e apresnete convertida em quilometros. A formula de conversão é: K = 1,61*M, sendo K a distancia em quilometros e M e, milhas.
+```
+import java.util.Scanner;
+
+public class Exercicio9 {
+
+    public static void main (String[]args){
+
+        double k,m;
+        Scanner velocidade = new Scanner(System.in);
+        System.out.println("Informe a distância em milhas: ");
+        m = velocidade.nextDouble();
+
+        k = 1.61*m;
+        System.out.println("A velocidade convertida em quilometros é: "+ k);
+
+    }
+
+}
+```
+
+>10. Leia uma distancia em quilometros e apresente convetida em milhas. A fórmula de conversão é M = k/1,61 sendo K a distancia em quilometros e M em milhas.
+```
+import java.util.Scanner;
+
+public class Exercicio10 {
+
+    public static void main (String[]args){
+
+        double k,m;
+        Scanner velocidade = new Scanner(System.in);
+        System.out.println("Informe a distância em quilometros: ");
+        k = velocidade.nextDouble();
+
+        m = k*1.61;
+        System.out.println("A velocidade convertida em milhas é: "+ m);
+
+    }
+
+}
+```
+>11. Leia um angulo em graus e apresente convertido em radianos. A formula de conversão é: R=G*PI/180, sendo G o angulo em graus e R em radianos e PI=3,14.
+>12. Leia um angulo em radianos e apresente o convertido em graus. A formula de conversão é G = R*180/PI, sendo G o angulo em graus e R em radianos e PI = 3.14.
+>13. Leia um valor de comprimento em polegadas e apresente convertido em cetimentros. A formula de conversão é C = P*2,54, sendo C o comprimento em cetimentros e P o comprimento em polegadas.
+>14. Leia um valor de comprimento em cetimentros e apresente convertido em polegadas. A formula de conversão é P = c/2,54 sendo C o comprimento em cetimentros e P o comprimento em polegadas.
+>15. Leia um valor de volume em metros cubicos m² e apresente convertido em litros. A formula de conversão é L=1000*M, sendo L o volume em litros e M o volume em metros cúbicos.
+>16. Leia um valor de volume em litros e apresente convertido em metros cúbicos m³. A formula de conversão é M=l/1000 sendo L o volume em litros e M o volume em metros cúbicos.
+>17. Leia um valor de massa em quilogramas e apresente convertido em libras. A formula de conversão é: L = K/0,45 sendo K a massa em quilogramas e L a massa em libras.
