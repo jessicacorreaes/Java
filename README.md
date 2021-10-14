@@ -384,9 +384,56 @@ public class Exercicio18 {
 
 }
 ```
+
 > 19. Leia um número inteiro e imprima o seu antecessor e o seu sucessor.
-> 20. Leia um número inteiro e imprima a soma do sucessor de seu triplo com o antecessor de seu dobro.
-> 21. Leia o tamanho do lado de um quadrado e imprima como resultado a sua area.
+```
+import java.util.Scanner;
+
+public class Exercicio19 {
+    public static void main (String[]args){
+
+        int n, antecessor, successor;
+        Scanner numero = new Scanner (System.in);
+        System.out.println("Informe um número: ");
+        n = numero.nextInt();
+
+        antecessor = n - 1;
+        successor = n + 1;
+
+        System.out.println(" O numero informado é "+ n + " o antecessor é: " + antecessor + " e o sucessor é " + successor);
+
+
+    }
+}
+```
+
+> 20. Leia o tamanho do lado de um quadrado e imprima como resultado a sua area.
+```
+import java.util.Scanner;
+
+public class Exercicio20 {
+
+    public static void main(String[]args){
+
+        double l, area;
+        Scanner lado = new Scanner(System.in);
+        System.out.println("Informe um valor para o lado do seu quadrado: ");
+        l = lado.nextDouble();
+
+        area = l*l;
+        System.out.printf("A area do quadrado é %.2f", area);
+
+
+    }
+
+}
+```
+
+> 21. Leia um número inteiro e imprima a soma do sucessor de seu triplo com o antecessor de seu dobro.
+```
+
+```
+
 > 22. Faça um programa que leia o valor de um produto e imprima o valor com desconto, tendo em vista que o desconto foi de 12%.
 > 23. Leia o salário de um funcionario. Calcule e imprima o valor do novo salario sabendo que  ele recebeu um aumento de 25%.
 > 24. (39) A importancia de R$780.000,00 será dividida entre três ganhadores de um concurso.
